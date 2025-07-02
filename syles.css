@@ -1,0 +1,252 @@
+*{margin: 0;
+box-sizing: border-box;}
+
+.cxpreta {
+    background-color: black;
+    width: 90px;
+    height: 90px;
+
+}
+.ft1 {
+    margin-top: 27px;
+    margin-left: 26px;
+    
+}
+
+
+#tudo { display: grid;
+grid-template-columns: 90px 1fr;
+height: 100vh;}
+
+#imagens {display: flex;}
+
+#calango { background-image: url(5.jpg.webp);
+flex-grow: 4;
+filter: brightness(60%);}
+
+#mulher {background-image: url(1.jpg.webp);
+    filter: brightness(60%);}
+
+#cachorro {background-image: url(2.jpg.webp);
+    filter: brightness(60%);}
+
+#mar { background-image: url(3.jpg.webp);
+    filter: brightness(60%);}
+
+#carro { background-image: url(4.jpg.webp);
+    filter: brightness(60%);}
+
+#fotos{
+    display: flex;
+}
+#fotos:hover #calango{
+    flex-grow: 1;
+}
+#calango:hover {
+    filter: brightness(100%);
+    transition: 1s;
+}
+#mulher:hover {
+    filter: brightness(100%);
+}
+#cachorro:hover {
+    filter: brightness(100%);
+}
+#mar:hover {
+    filter: brightness(100%);
+}
+#carro:hover {
+    filter: brightness(100%);
+}
+#fotos:hover #calango:hover{
+    flex-grow: 4;
+}
+.img-item{
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    transition: 0.4s;
+}
+.img-item:hover {
+    flex-grow: 4;
+    ;
+}
+
+
+.divAMover {
+    /* Estilos iniciais da div */
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    transition: left 0.3s ease; /* Adiciona uma transição suave */
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+  }
+
+  #meuCheckbox:checked ~ .divAMover {
+    /* Estilos quando a checkbox está marcada */
+    left: 0px; /* Move a div para a direita */
+  }
+  #meuCheckbox{
+    position: absolute;
+    opacity: 0;
+    height: 90px;
+    width: 90px;
+    left: 0;
+    cursor: pointer;
+  }
+.voltar{
+    position: absolute;
+    top: 0;
+    width: 90px;
+    height: 90px;
+    left: -200px;
+    transition: left 0.3s ease; /* Adiciona uma transição suave */
+    background-color: rgb(0, 0, 0);
+    z-index: 999;
+}
+#meuCheckbox:checked ~ .voltar {
+    /* Estilos quando a checkbox está marcada */
+    left: 0px; /* Move a div para a direita */
+  }
+  .tulen {
+    position: absolute;
+    top: 0;
+    width: 160px;
+    height: 90px;
+    left: -200px;
+    transition: left 0.3s ease; /* Adiciona uma transição suave */
+    background-color: rgb(25, 7, 187);
+    z-index: 999;
+  }
+  
+  #meuCheckbox:checked ~ .tulen {
+    /* Estilos quando a checkbox está marcada */
+    left: 90px; /* Move a div para a direita */
+  }
+
+  .tulenfr {
+    color: white;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 40px;
+    margin-top: 25px;
+  } 
+  .face {
+    margin-left: 35px;
+    margin-top: 250px;
+  }
+  .tw{
+    margin-left: 35px;
+    margin-top: 55px;
+  }
+  .link {
+    margin-left: 35px;
+    margin-top: 55px;
+  }
+  .insta {
+    margin-left: 35px;
+    margin-top: 55px;
+  }
+.seta {
+    width: 35px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.fr1 {
+    font-size: 35px;
+    color: blue;
+    position: absolute;
+    top: 240px;
+    left: -200px;
+    transition: left 0.3s ease; 
+    z-index: 999;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+  
+#meuCheckbox:checked ~ .fr1 {
+    /* Estilos quando a checkbox está marcada */
+    left: 90px; /* Move a div para a direita */
+  }
+  .fr2 {
+    font-size: 35px;
+    color: gray;
+    position: absolute;
+    top: 310px;
+    left: -200px;
+    transition: left 0.3s ease; 
+    z-index: 999;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#meuCheckbox:checked ~ .fr2 {
+    /* Estilos quando a checkbox está marcada */
+    left: 90px; /* Move a div para a direita */
+  }
+  .fr2:hover{
+    color: blue;
+  }
+  .fr3 {
+    font-size: 35px;
+    color: gray;
+    position: absolute;
+    top: 380px;
+    left: -200px;
+    transition: left 0.3s ease; 
+    z-index: 999;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#meuCheckbox:checked ~ .fr3 {
+    /* Estilos quando a checkbox está marcada */
+    left: 82px; /* Move a div para a direita */
+  }
+  .fr3:hover{
+    color: blue;
+  }
+  .fr4 {
+    font-size: 35px;
+    color: gray;
+    position: absolute;
+    top: 450px;
+    left: -200px;
+    transition: left 0.3s ease; 
+    z-index: 999;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#meuCheckbox:checked ~ .fr4 {
+    /* Estilos quando a checkbox está marcada */
+    left: 98px; /* Move a div para a direita */
+  }
+  .fr4:hover{
+    color: blue;
+  }
+  .fr5{
+    font-size: 35px;
+    color: gray;
+    position: absolute;
+    top: 510px;
+    left: -200px;
+    transition: left 0.3s ease; 
+    z-index: 999;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  #meuCheckbox:checked ~ .fr5 {
+    /* Estilos quando a checkbox está marcada */
+    left: 75px; /* Move a div para a direita */
+  }
+  .fr5:hover{
+    color: blue;
+  }
+  .face2{
+    position: absolute;
+    top: 620px;
+    left: -200px;
+    transition: left 0.3s ease; 
+    z-index: 999;
+    width: 25px;
+  }
+  #meuCheckbox:checked ~ .face2 {
+    /* Estilos quando a checkbox está marcada */
+    left: 45px; /* Move a div para a direita */
+  }
